@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Functions</title>
+</head>
+<body>
+    <script>
+        function convertToFah(celsius){
+            return (celsius *9/5) + 32;
+        }
+
+        function convertToCel(fahrenheit)
+        {
+            return (fahrenheit - 32)*5/9;
+        }
+
+        function convertToTemp(degrees, unit)
+        {
+            if(unit === 'C'){
+                const result = convertToFah(degrees);
+                return `${result}F`;
+            }
+            else if(unit === 'F'){
+                const result = convertToCel(degrees);
+                return `${result}C`;
+            }
+        }
+        console.log(convertToTemp(25,'C'));
+        console.log(convertToTemp(86,'F'));
+
+        convertToTemp(25,'C');
+        convertToTemp(86,'F');
+
+
+    </script>
+</body>
+</html>
