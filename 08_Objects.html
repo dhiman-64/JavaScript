@@ -38,8 +38,24 @@
 
         console.log(Dhiman);
         
+        const product2 = {
+            name : 'shirt',
+            delivery_time : '1 day',
+            rating : {
+                stars : 4.5,
+                count : 87
+            },
+            fun: function func1(){
+                console.log('Function inside Object');
+            }
+        };
+        console.log(product2);
+        console.log(product['name']);
+        console.log(product2['delivery_time']);
+        console.log(product2.rating.count);
 
-
+        console.log(product2.rating.count);
+        product2.fun();
     </script>
 </body>
 </html>
